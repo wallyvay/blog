@@ -3,6 +3,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+.jekyll-cache/
+vendor/
 
 # 编辑器和OS文件
 .DS_Store
@@ -27,4 +29,8 @@ index.cjson
 photography/
 _direct/
 macintosh/
-template/ 
+template/
+
+# Bundle
+.bundle/
+vendor/ 
