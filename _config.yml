@@ -2,9 +2,9 @@ title: 位毛的博客
 email: your-email@example.com
 description: >-
   一个个人博客，记录生活、技术和思考。
-baseurl: ""
-url: ""
-github_username: weimao
+baseurl: "/blog"
+url: "https://wallyvay.github.io"
+github_username: wallyvay
 
 # 构建设置
 markdown: kramdown
