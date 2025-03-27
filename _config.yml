@@ -1,0 +1,28 @@
+title: 位毛的博客
+email: your-email@example.com
+description: >-
+  一个个人博客，记录生活、技术和思考。
+baseurl: ""
+url: ""
+github_username: weimao
+
+# 构建设置
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page:num/"
+
+# 排除文件
+exclude:
+  - .db/
+  - .Archive/
+  - _direct/
+  - 草稿/
+  - .DS_Store
+  - .ios_file_manager_status.json
+  - .posts_info.json
+  - index.cjson 
