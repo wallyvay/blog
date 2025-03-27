@@ -3,7 +3,7 @@ email: your-email@example.com
 description: >-
   一个个人博客，记录生活、技术和思考。
 baseurl: "/blog"
-url: "https://你的GitHub用户名.github.io"
+url: "https://weimao.github.io"
 github_username: weimao
 
 # 构建设置
