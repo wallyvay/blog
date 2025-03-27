@@ -1,23 +1,25 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.0"
-gem "minima", "~> 2.5"
+# Ruby 2.6.10兼容性
+gem "jekyll", "~> 3.9.0"
+gem "kramdown-parser-gfm"
+
+# GitHub Pages环境
+gem "github-pages", group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-paginate"
+  gem "jekyll-seo-tag", "~> 2.7"
 end
 
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
-# and associated library.
+# Windows和JRuby不包括zoneinfo文件，所以需要这个
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", "~> 1.2"
   gem "tzinfo-data"
 end
 
-# Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+# Windows通常需要性能监控工具
+gem "webrick", "~> 1.7", :platforms => [:mingw, :x64_mingw, :mswin, :jruby, :ruby]
 
-# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
-# do not have a Java counterpart.
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby] 
+# 指定兼容版本
+gem "public_suffix", "< 6.0" 

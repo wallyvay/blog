@@ -1,0 +1,43 @@
+<nav class="site-nav">
+  <ul>
+    <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>首页</a></li>
+    <li><a href="{{ site.baseurl }}/macintosh/" {% if page.url == "/macintosh/" %}class="active"{% endif %}>Mac相关</a></li>
+    <li><a href="{{ site.baseurl }}/疯言疯语/" {% if page.url == "/疯言疯语/" %}class="active"{% endif %}>疯言疯语</a></li>
+    <li><a href="{{ site.baseurl }}/讲点正事儿/" {% if page.url == "/讲点正事儿/" %}class="active"{% endif %}>讲点正事儿</a></li>
+    <li><a href="{{ site.baseurl }}/日本之旅/" {% if page.url == "/日本之旅/" %}class="active"{% endif %}>日本之旅</a></li>
+    <li><a href="{{ site.baseurl }}/两人一狗去拉萨/" {% if page.url == "/两人一狗去拉萨/" %}class="active"{% endif %}>两人一狗去拉萨</a></li>
+    <li><a href="{{ site.baseurl }}/about/" {% if page.url == "/about/" %}class="active"{% endif %}>关于</a></li>
+  </ul>
+</nav>
+
+<style>
+  .site-nav {
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+  .site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-nav li {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+  }
+  .site-nav li:last-child {
+    margin-right: 0;
+  }
+  .site-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .site-nav a:hover, .site-nav a.active {
+    color: #0366d6;
+    border-bottom: 2px solid #0366d6;
+  }
+</style> 
