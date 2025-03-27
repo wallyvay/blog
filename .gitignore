@@ -1,0 +1,30 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# 编辑器和OS文件
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 旧博客内容
+.db/
+.Archive/
+.ios_file_manager_status.json
+.posts_info.json
+index.cjson
+草稿/
+疯言疯语/
+讲点正事儿/
+日本之旅/
+两人一狗去拉萨/
+日記/
+photography/
+_direct/
+macintosh/
+template/ 
